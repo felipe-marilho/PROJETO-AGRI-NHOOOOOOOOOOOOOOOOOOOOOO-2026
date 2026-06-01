@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Do Campo ao Futuro</title>
     <link rel="stylesheet" href="style.css">
-    <title>Projeeeeeeeeeeeeeeeeeeeeeeeeeeto agriiiiiiiiiiiiinhooooooooooo 2000 e 26</title>
 </head>
 <body>
-<script src="main.js"></script>    
+
+    <header class="cabecalho">
+        <div class="logo">
+            <h2>Agrinho <span>2026</span></h2>
+        </div>
+        
+        <nav class="menu" id="menu-navegacao">
+            <a href="#introducao">Introdução</a>
+            <a href="#sustentabilidade">Sustentabilidade</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#impactos">Impactos</a>
+            <a href="#simulador">Simulador Agro</a>
+        </nav>
+
+        <div class="controles-cabecalho">
+            <button id="btn-tema" class="btn-icone" title="Alternar Tema">🌓</button>
+            <button id="btn-menu-toggle" class="btn-icone mobile-apenas" title="Abrir Menu">☰</button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-conteudo">
+            <h1>Tecnologia, Agricultura e Sustentabilidade</h1>
+            <p>Construindo um futuro melhor através da inovação no campo.</p>
+            <a href="#introducao" class="btn-principal">Conhecer o Projeto</a>
+        </div>
+    </section>
+
+    <section id="introducao" class="secao-container">
+        <h2 class="titulo-secao">O Agrinho 2026</h2>
+        <div class="conteudo-flex">
+            <div class="texto-bloco">
+                <p>O tema do Agrinho 2026 convida estudantes e produtores a explorarem a sinergia perfeita entre a preservação ambiental e o avanço tecnológico. Descubra como a inteligência artificial, a automação e as práticas verdes guiam a nova revolução no campo, garantindo alimentos de qualidade e a proteção do nosso ecossistema.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustentabilidade" class="secao-container secao-alternativa">
+        <h2 class="titulo-secao">Sustentabilidade no Campo</h2>
+        <p class="subtitulo-secao">Práticas conscientes que preservam o amanhã.</p>
+        
+        <div class="grid-cards">
+            <div class="card-info">
+                <div class="card-icone">💧</div>
+                <h3>Uso Consciente da Água</h3>
+                <p>Sistemas de irrigação por gotejamento inteligente que reduzem o desperdício, aplicando a quantidade exata necessária para a planta.</p>
+            </div>
+            <div class="card-info">
+                <div class="card-icone">☀️</div>
+                <h3>Energia Limpa</h3>
+                <p>Fazendas movidas a energia solar e biomassa, diminuindo drasticamente a pegada de carbono da produção agrícola.</p>
+            </div>
+            <div class="card-info">
+                <div class="card-icone">🌳</div>
+                <h3>Preservação Ambiental</h3>
+                <p>Rotação de culturas e recuperação de áreas degradadas trabalhando lado a lado com as florestas nativas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="secao-container">
+        <h2 class="titulo-secao">Tecnologia Avançada</h2>
+        <p class="subtitulo-secao">As ferramentas da agricultura 4.0 transformando o manejo tradicional.</p>
+        
+        <div class="grid-cards">
+            <div class="card-info tech">
+                <div class="card-icone">🛸</div>
+                <h3>Drones & Sensores</h3>
+                <p>Mapeamento térmico e análise espectral para monitorar a saúde das plantas em tempo real e aplicar insumos com precisão.</p>
+            </div>
+            <div class="card-info tech">
+                <div class="card-icone">🤖</div>
+                <h3>Automação & IA</h3>
+                <p>Tratores autônomos e algoritmos de inteligência artificial que preveem pragas e otimizam os períodos de colheita.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="secao-container secao-alternativa">
+        <h2 class="titulo-secao">Simulador de Campo Interativo</h2>
+        <p class="subtitulo-secao">Ajuste os parâmetros abaixo para simular as condições ideais da plantação tech.</p>
+        
+        <div class="simulador-box">
+            <div class="controles-simulador">
+                <div class="grupo-controle">
+                    <label for="range-clima">Nível de Irrigação/Chuva:</label>
+                    <input type="range" id="range-clima" min="0" max="100" value="50">
+                </div>
+                <div class="grupo-controle">
+                    <label for="select-solo">Tipo de Solo:</label>
+                    <select id="select-solo">
+                        <option value="ideal">Arenoso-Argiloso Nutritivo (Ideal)</option>
+                        <option value="seco">Seco / Compactado</option>
+                        <option value="encharcado">Saturado de Água</option>
+                    </select>
+                </div>
+                <button id="btn-simular" class="btn-principal">Analisar Plantação</button>
+            </div>
+            <div class="resultado-simulador" id="painel-resultado">
+                <p>Aguardando análise dos sensores...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="impactos" class="secao-container">
+        <h2 class="titulo-secao">Impactos Coletivos</h2>
+        <div class="grid-cards">
+            <div class="card-impacto">
+                <h4>Produtores</h4>
+                <p>Redução de custos de operação e maior rentabilidade nas safras.</p>
+            </div>
+            <div class="card-impacto">
+                <h4>Cidades</h4>
+                <p>Abastecimento seguro com alimentos mais saudáveis e livres de excesso de químicos.</p>
+            </div>
+            <div class="card-impacto">
+                <h4>Meio Ambiente</h4>
+                <p>Manutenção da biodiversidade regional e conservação de rios e nascentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conclusao">
+        <div class="conclusao-conteudo">
+            <h2>O Amanhã é Cultivado Hoje</h2>
+            <p>Unir a sabedoria da terra com o poder da tecnologia nos dá a chance única de nutrir o planeta de forma sustentável. Faça parte dessa transformação!</p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Agrinho Tech. Todos os direitos reservados.</p>
+        <p>Desenvolvido para fins educacionais - Tecnologia e Sustentabilidade.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
