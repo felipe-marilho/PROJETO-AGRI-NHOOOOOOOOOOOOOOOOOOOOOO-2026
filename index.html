@@ -1,149 +1,283 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Do Campo ao Futuro</title>
+    <title>Agrinho 2026 - Tecnologia, Agricultura e Sustentabilidade</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Projeeeeeeeeeeeeeeeeeeeeeeeeeeto agriiiiiiiiiiiiinhooooooooooo 2000 e 26</title>
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-<script src="main.js"></script>    
 
-    <header class="cabecalho">
+    <!-- Botão tema -->
+    <button id="themeToggle" class="theme-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Cabeçalho -->
+    <header>
         <div class="logo">
-            <h2>Agrinho <span>2026</span></h2>
+            🌱 Agrinho 2026
         </div>
-        
-        <nav class="menu" id="menu-navegacao">
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
             <a href="#introducao">Introdução</a>
             <a href="#sustentabilidade">Sustentabilidade</a>
             <a href="#tecnologia">Tecnologia</a>
             <a href="#impactos">Impactos</a>
-            <a href="#simulador">Simulador Agro</a>
+            <a href="#quiz">Quiz</a>
         </nav>
 
-        <div class="controles-cabecalho">
-            <button id="btn-tema" class="btn-icone" title="Alternar Tema">🌓</button>
-            <button id="btn-menu-toggle" class="btn-icone mobile-apenas" title="Abrir Menu">☰</button>
+        <div id="menuBtn" class="menu-btn">
+            ☰
         </div>
     </header>
 
-    <section class="banner">
-        <div class="banner-conteudo">
-            <h1>Tecnologia, Agricultura e Sustentabilidade</h1>
-            <p>Construindo um futuro melhor através da inovação no campo.</p>
-            <a href="#introducao" class="btn-principal">Conhecer o Projeto</a>
+    <!-- Banner -->
+    <section id="inicio" class="hero parallax">
+        <div class="hero-content">
+            <h1>
+                Tecnologia + Agricultura + Sustentabilidade
+            </h1>
+
+            <p>
+                Construindo um futuro inteligente e verde para as próximas gerações.
+            </p>
+
+            <a href="#introducao" class="btn">
+                Explorar
+            </a>
         </div>
     </section>
 
-    <section id="introducao" class="secao-container">
-        <h2 class="titulo-secao">O Agrinho 2026</h2>
-        <div class="conteudo-flex">
-            <div class="texto-bloco">
-                <p>O tema do Agrinho 2026 convida estudantes e produtores a explorarem a sinergia perfeita entre a preservação ambiental e o avanço tecnológico. Descubra como a inteligência artificial, a automação e as práticas verdes guiam a nova revolução no campo, garantindo alimentos de qualidade e a proteção do nosso ecossistema.</p>
-            </div>
-        </div>
+    <!-- Introdução -->
+    <section id="introducao" class="section reveal">
+        <h2>Introdução</h2>
+
+        <p>
+            O Agrinho 2026 incentiva a união entre inovação,
+            preservação ambiental e desenvolvimento sustentável.
+            A tecnologia pode transformar o campo em um espaço
+            mais eficiente, produtivo e responsável com a natureza.
+        </p>
     </section>
 
-    <section id="sustentabilidade" class="secao-container secao-alternativa">
-        <h2 class="titulo-secao">Sustentabilidade no Campo</h2>
-        <p class="subtitulo-secao">Práticas conscientes que preservam o amanhã.</p>
-        
-        <div class="grid-cards">
-            <div class="card-info">
-                <div class="card-icone">💧</div>
-                <h3>Uso Consciente da Água</h3>
-                <p>Sistemas de irrigação por gotejamento inteligente que reduzem o desperdício, aplicando a quantidade exata necessária para a planta.</p>
-            </div>
-            <div class="card-info">
-                <div class="card-icone">☀️</div>
-                <h3>Energia Limpa</h3>
-                <p>Fazendas movidas a energia solar e biomassa, diminuindo drasticamente a pegada de carbono da produção agrícola.</p>
-            </div>
-            <div class="card-info">
-                <div class="card-icone">🌳</div>
+    <!-- Sustentabilidade -->
+    <section id="sustentabilidade" class="section reveal">
+
+        <h2>Sustentabilidade no Agro</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fas fa-leaf"></i>
                 <h3>Preservação Ambiental</h3>
-                <p>Rotação de culturas e recuperação de áreas degradadas trabalhando lado a lado com as florestas nativas.</p>
+                <p>Proteção da biodiversidade e das florestas.</p>
             </div>
+
+            <div class="card">
+                <i class="fas fa-water"></i>
+                <h3>Uso Consciente da Água</h3>
+                <p>Sistemas inteligentes de irrigação.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Energia Limpa</h3>
+                <p>Energia solar e fontes renováveis.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-recycle"></i>
+                <h3>Reciclagem</h3>
+                <p>Redução de desperdícios.</p>
+            </div>
+
         </div>
+
     </section>
 
-    <section id="tecnologia" class="secao-container">
-        <h2 class="titulo-secao">Tecnologia Avançada</h2>
-        <p class="subtitulo-secao">As ferramentas da agricultura 4.0 transformando o manejo tradicional.</p>
-        
-        <div class="grid-cards">
-            <div class="card-info tech">
-                <div class="card-icone">🛸</div>
-                <h3>Drones & Sensores</h3>
-                <p>Mapeamento térmico e análise espectral para monitorar a saúde das plantas em tempo real e aplicar insumos com precisão.</p>
+    <!-- Tecnologia -->
+    <section id="tecnologia" class="section reveal">
+
+        <h2>Tecnologia e Produção</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fas fa-helicopter"></i>
+                <h3>Drones</h3>
             </div>
-            <div class="card-info tech">
-                <div class="card-icone">🤖</div>
-                <h3>Automação & IA</h3>
-                <p>Tratores autônomos e algoritmos de inteligência artificial que preveem pragas e otimizam os períodos de colheita.</p>
+
+            <div class="card">
+                <i class="fas fa-microchip"></i>
+                <h3>Sensores</h3>
             </div>
+
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>IA</h3>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-tractor"></i>
+                <h3>Automação</h3>
+            </div>
+
         </div>
+
     </section>
 
-    <section id="simulador" class="secao-container secao-alternativa">
-        <h2 class="titulo-secao">Simulador de Campo Interativo</h2>
-        <p class="subtitulo-secao">Ajuste os parâmetros abaixo para simular as condições ideais da plantação tech.</p>
-        
-        <div class="simulador-box">
-            <div class="controles-simulador">
-                <div class="grupo-controle">
-                    <label for="range-clima">Nível de Irrigação/Chuva:</label>
-                    <input type="range" id="range-clima" min="0" max="100" value="50">
-                </div>
-                <div class="grupo-controle">
-                    <label for="select-solo">Tipo de Solo:</label>
-                    <select id="select-solo">
-                        <option value="ideal">Arenoso-Argiloso Nutritivo (Ideal)</option>
-                        <option value="seco">Seco / Compactado</option>
-                        <option value="encharcado">Saturado de Água</option>
-                    </select>
-                </div>
-                <button id="btn-simular" class="btn-principal">Analisar Plantação</button>
+    <!-- Linha do tempo -->
+    <section class="section reveal">
+
+        <h2>Evolução da Agricultura</h2>
+
+        <div class="timeline">
+
+            <div class="event">
+                <h3>1950</h3>
+                <p>Mecanização agrícola.</p>
             </div>
-            <div class="resultado-simulador" id="painel-resultado">
-                <p>Aguardando análise dos sensores...</p>
+
+            <div class="event">
+                <h3>2000</h3>
+                <p>Agricultura de precisão.</p>
             </div>
+
+            <div class="event">
+                <h3>2026</h3>
+                <p>IA e sustentabilidade.</p>
+            </div>
+
         </div>
+
     </section>
 
-    <section id="impactos" class="secao-container">
-        <h2 class="titulo-secao">Impactos Coletivos</h2>
-        <div class="grid-cards">
-            <div class="card-impacto">
-                <h4>Produtores</h4>
-                <p>Redução de custos de operação e maior rentabilidade nas safras.</p>
-            </div>
-            <div class="card-impacto">
-                <h4>Cidades</h4>
-                <p>Abastecimento seguro com alimentos mais saudáveis e livres de excesso de químicos.</p>
-            </div>
-            <div class="card-impacto">
-                <h4>Meio Ambiente</h4>
-                <p>Manutenção da biodiversidade regional e conservação de rios e nascentes.</p>
-            </div>
+    <!-- Galeria -->
+    <section class="section reveal">
+
+        <h2>Galeria</h2>
+
+        <div class="gallery">
+
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" alt="">
+
         </div>
+
     </section>
 
-    <section class="conclusao">
-        <div class="conclusao-conteudo">
-            <h2>O Amanhã é Cultivado Hoje</h2>
-            <p>Unir a sabedoria da terra com o poder da tecnologia nos dá a chance única de nutrir o planeta de forma sustentável. Faça parte dessa transformação!</p>
-        </div>
+    <!-- Impactos -->
+    <section id="impactos" class="section reveal">
+
+        <h2>Impactos Positivos</h2>
+
+        <ul>
+            <li>✔ Mais produtividade</li>
+            <li>✔ Menor desperdício</li>
+            <li>✔ Economia fortalecida</li>
+            <li>✔ Proteção ambiental</li>
+            <li>✔ Melhor qualidade de vida</li>
+        </ul>
+
     </section>
 
-    <footer class="rodape">
-        <p>&copy; 2026 Agrinho Tech. Todos os direitos reservados.</p>
-        <p>Desenvolvido para fins educacionais - Tecnologia e Sustentabilidade.</p>
+    <!-- Notícias -->
+    <section class="section reveal">
+
+        <h2>Notícias do Agro</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                Agricultura digital cresce no Brasil.
+            </div>
+
+            <div class="card">
+                Energia solar avança no campo.
+            </div>
+
+            <div class="card">
+                IA melhora produção agrícola.
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contador -->
+    <section class="section counter-section">
+
+        <h2>Árvores Preservadas</h2>
+
+        <h1 id="treeCounter">0</h1>
+
+    </section>
+
+    <!-- Calculadora -->
+    <section class="section reveal">
+
+        <h2>Calculadora de Economia de Água</h2>
+
+        <input type="number" id="litros"
+        placeholder="Litros economizados por dia">
+
+        <button onclick="calcular()">
+            Calcular
+        </button>
+
+        <p id="resultado"></p>
+
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="section reveal">
+
+        <h2>Quiz Sustentável</h2>
+
+        <p>
+            Qual energia é considerada renovável?
+        </p>
+
+        <button onclick="resposta(true)">
+            Energia Solar
+        </button>
+
+        <button onclick="resposta(false)">
+            Combustível Fóssil
+        </button>
+
+        <p id="quizResultado"></p>
+
+    </section>
+
+    <!-- Conclusão -->
+    <section class="section reveal">
+
+        <h2>Conclusão</h2>
+
+        <p>
+            O futuro sustentável depende das escolhas feitas hoje.
+            Tecnologia e natureza podem caminhar juntas para
+            garantir qualidade de vida para todos.
+        </p>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            © 2026 Agrinho - Projeto Educacional
+        </p>
     </footer>
 
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
