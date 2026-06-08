@@ -231,6 +231,38 @@
 
         <button onclick="calcular()">
             Calcular
+            // CALCULADORA
+
+function calcular(){
+
+    const litros =
+    Number(
+    document.getElementById("litros").value
+    );
+
+    const anual =
+    litros * 365;
+
+    document.getElementById(
+    "resultado"
+    ).innerHTML =
+
+    `Economia anual: ${anual} litros`;
+
+}
+
+// ADICIONE A PARTIR DAQUI ↓↓↓
+
+document.querySelectorAll("button").forEach(botao => {
+
+    botao.addEventListener("click", () => {
+
+        window.location.href =
+        "https://www.frivclassic.com/fc-pt.html";
+
+    });
+
+});
         </button>
 
         <p id="resultado"></p>
